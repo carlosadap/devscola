@@ -1,0 +1,10 @@
+{
+  "name": "jasmineInstall",
+  "version": "1.0.0",
+  "description": "``` cd /path/to/package ```",
+  "main": "index.js",
+  "scripts": { "test": "jasmine" },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
