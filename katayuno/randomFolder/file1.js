@@ -1,3 +1,5 @@
-module.exports = function f1() {
-  alert("hey there")
+class Test {
+  constructor() {
+    this.easyBtn = 
+  }
 }
