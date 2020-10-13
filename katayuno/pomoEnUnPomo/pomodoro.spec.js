@@ -30,7 +30,7 @@ describe('Pomodoro', () => {
 
       const timeLeft = pomodoro.getTime()
       
-      expect(timeLeft).toBe(anyDuration);
+      expect(timeLeft).toBe(defaultDuration);
     })
   })
 })
