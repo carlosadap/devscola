@@ -5,6 +5,6 @@ class Pomodoro {
   }
 
   getTime() {
-    return this.duration || this.defaultDuration;
+    return this.duration > 0 ? this.duration : this.defaultDuration;
   }
 }

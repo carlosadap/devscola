@@ -1,6 +1,6 @@
 describe('Pomodoro', () => {
   describe('When created', () => {
-    it('has a default duration', () => {
+    it('has the default duration', () => {
       //Arrange
       const pomodoro = new Pomodoro();
       const defaultDuration = 25;
@@ -21,6 +21,16 @@ describe('Pomodoro', () => {
       
       expect(timeLeft).toBe(anyDuration);
     })
+    
+    it('has the default duration if declared negative', () => {
+      
+      const anyNegative = -5;
+      const defaultDuration = 25;
+      const pomodoro = new Pomodoro(anyNegative)
 
+      const timeLeft = pomodoro.getTime()
+      
+      expect(timeLeft).toBe(anyDuration);
+    })
   })
 })
